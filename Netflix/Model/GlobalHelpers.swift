@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 //  Mainly for Testing only -- To see in the preview file on the UIScreen
 
@@ -17,3 +18,11 @@ let exampleMovieFive = Movie(id: UUID().uuidString, name: "Home Alone", thumbnai
 let exampleMovieSix = Movie(id: UUID().uuidString, name: "Darkwing Duck", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"])
 
 let exampleMovies: [Movie] = [exampleMovieOne, exampleMovieTwo, exampleMovieThree, exampleMovieFour, exampleMovieFive, exampleMovieSix]
+
+extension LinearGradient {
+    static let blackOpacityGradient = LinearGradient(
+        gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.95)]),
+        startPoint: .top,
+        endPoint: .bottom
+    )
+}

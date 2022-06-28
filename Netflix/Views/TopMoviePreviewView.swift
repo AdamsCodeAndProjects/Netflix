@@ -22,7 +22,6 @@ struct TopMoviePreviewView: View {
         return true
     }
     
-    
     var body: some View {
         ZStack {
             KFImage(movie.thumbnailURL)
@@ -38,7 +37,7 @@ struct TopMoviePreviewView: View {
                         HStack {
                             
                             Text(category)
-                                .font(.system(size: 16))
+                                .font(.footnote)
                             
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
@@ -48,8 +47,31 @@ struct TopMoviePreviewView: View {
                         }
                     }
                 }
-                Text("Row of Buttons")
+                HStack {
+                    Spacer()
+                    
+                    SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                        //
+                    }
+                    Spacer()
+                    
+                    WhiteButton(text: "Play", imageName: "play.fill") {
+                        //
+                    }
+                    .frame(width: 120)
+                    
+                    Spacer()
+                    
+                    SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
+                        //
+                    }
+                    Spacer()
+                }
             }
+            .background(
+                LinearGradient.blackOpacityGradient
+                .padding(.top, 450)
+            )
         }
         .foregroundColor(.white)
     }

@@ -10,6 +10,9 @@ import SwiftUI
 struct HomeView: View {
     var vm = HomeVM()
     
+    // Used to expand screen to whole bounds
+    let screen = UIScreen.main.bounds
+    
     
     var body: some View {
         ZStack {
@@ -18,6 +21,12 @@ struct HomeView: View {
             
             ScrollView(showsIndicators: false) {
                 LazyVStack { // Only Render Views that are on the screen
+                    TopMoviePreviewView(movie: exampleMovieSix)
+                        .frame(width: screen.width)
+                        .padding(.top, -110)
+                        
+                    
+                    
                     ForEach(vm.allCategories, id: \.self) { category in
                         VStack {
                             HStack {

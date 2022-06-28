@@ -18,6 +18,8 @@
 		661DC93028625139006268F7 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DC92F28625139006268F7 /* GlobalHelpers.swift */; };
 		6694118E28637A6100FD6071 /* TopMoviePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694118D28637A6100FD6071 /* TopMoviePreviewView.swift */; };
 		66A1559828625457009F47CE /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1559728625457009F47CE /* HomeVM.swift */; };
+		66AF6DA2286B5C7000BA116A /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AF6DA1286B5C7000BA116A /* SmallVerticalButton.swift */; };
+		66AF6DA4286B63A700BA116A /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AF6DA3286B63A700BA116A /* WhiteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		661DC92F28625139006268F7 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		6694118D28637A6100FD6071 /* TopMoviePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreviewView.swift; sourceTree = "<group>"; };
 		66A1559728625457009F47CE /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		66AF6DA1286B5C7000BA116A /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		66AF6DA3286B63A700BA116A /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				661DC92328624F37006268F7 /* HomeView.swift */,
 				661DC92D286250EF006268F7 /* StandardHomeMovieView.swift */,
 				6694118D28637A6100FD6071 /* TopMoviePreviewView.swift */,
+				66AF6DA1286B5C7000BA116A /* SmallVerticalButton.swift */,
+				66AF6DA3286B63A700BA116A /* WhiteButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +201,8 @@
 				661DC92C28625092006268F7 /* Movie.swift in Sources */,
 				661DC91628624CE4006268F7 /* NetflixApp.swift in Sources */,
 				661DC92E286250EF006268F7 /* StandardHomeMovieView.swift in Sources */,
+				66AF6DA2286B5C7000BA116A /* SmallVerticalButton.swift in Sources */,
+				66AF6DA4286B63A700BA116A /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
